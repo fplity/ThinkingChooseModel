@@ -1,0 +1,46 @@
+# Local orchestration and editor state
+/.codex/
+.idea/
+.vscode/
+
+# Python environments, model weights, and package archives
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+**/models/
+**/packages/
+*.whl
+*.onnx
+*.safetensors
+*.pt
+*.pth
+
+# Local runtime state and credentials
+*.pid
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Historical UI assets and browser preview profiles are not release artifacts
+/LAYA/design/
+**/.preview-profile*/
+
+# Windows caches accidentally created in the working directory
+/%SystemDrive%/
+/NVIDIA Corporation/
+Thumbs.db
+Desktop.ini
+
+# Generated reports and recordings
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+outputs/

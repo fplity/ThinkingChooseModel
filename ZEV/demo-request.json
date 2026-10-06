@@ -1,0 +1,26 @@
+{
+  "model": "jev-latest",
+  "state": {
+    "source": "The tracking page says the parcel was delivered at 3 PM on September 20 at the front desk. The customer says the front desk was closed all afternoon.",
+    "candidate_answer": "The parcel was delivered at 3 PM on September 20 and left at the front desk."
+  },
+  "questions": {
+    "supported_by_source": {
+      "type": "noul",
+      "instructions": "Is every factual claim in candidate_answer supported by source?",
+      "criteria": {
+        "true": "The source supports every factual claim in the candidate answer.",
+        "false": "At least one factual claim is unsupported or contradicted by the source."
+      }
+    },
+    "verdict": {
+      "type": "choice",
+      "instructions": "What is the best judgment of candidate_answer against source?",
+      "criteria": {
+        "supported": "All claims are supported by the source.",
+        "contradicted": "The source conflicts with at least one claim.",
+        "uncertain": "The source does not provide enough evidence to decide."
+      }
+    }
+  }
+}
